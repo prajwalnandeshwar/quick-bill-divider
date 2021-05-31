@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+        <title>divider</title>
+    </head>
+    <body>
+        <main id="container">
+            <h2>Quick Divider</h2>
+            <section>
+                <div class="bill">
+                    <label for="yourBill">Bill</label>
+                    <input type="number" placeholder="your bill" id="yourBill" />
+                </div>
+                <div> 
+                    <div class="space">
+                        <label for="tipInput">select tip</label>
+                        <span id="tipPercent">0%</span>
+                    </div>
+                    <input class="range" type="range" value="0" id="tipInput" />
+                </div>
+                <div  class="space">
+                    <span>Tip</span>
+                    <span id="tipValue"></span>
+                </div>
+                <hr />
+                <div  class="space total">
+                    <span>Total</span>
+                    <span id="totalWithTip"></span>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <div  class="space">
+                        <label for="splitInput">Split</label>
+                        <span id="splitValue">1 Person</span>
+                    </div>
+                    <input class="range" type="range" min="1" max="10" value="1" id="splitInput"/>
+                </div>
+                <div  class="space">
+                    <span>Bill each</span>
+                    <span id="billEach"></span>
+                </div>
+                <div  class="space">
+                    <span>Tip each</span>
+                    <span id="tipEach"></span>
+                </div>
+            </section>
+        </main>
+        
+    </body>
+</html>
